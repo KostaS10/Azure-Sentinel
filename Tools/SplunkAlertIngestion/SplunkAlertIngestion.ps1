@@ -1,8 +1,8 @@
 param (
     [Parameter(Mandatory = $true)]
     [string]$ServicePrincipalName,
-    [Parameter(Mandatory = $true)]
-    [string]$tableName,
+    [Parameter(Mandatory = $false)]
+    [string]$tableName = "SplunkAlert_CL",
     [Parameter(Mandatory = $true)]
     [string]$workspaceResourceId,
     [Parameter(Mandatory = $true)]
